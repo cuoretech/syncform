@@ -3,11 +3,7 @@ import os
 from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
-<<<<<<< HEAD
 with open(os.path.join(here, 'README.md')) as f:
-=======
-with open(os.path.join(here, 'README.txt')) as f:
->>>>>>> 8f36627a1649aa4c0d660076b91943d33052eb73
     README = f.read()
 with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
