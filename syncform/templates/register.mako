@@ -1,4 +1,4 @@
-<%inherit file="cuorewebpage:templates/layout_sidebar_default.mako"/>
+<%inherit file="syncform:templates/layout_sidebar_default.mako"/>
 
 <div id="main_container">
   <div class="row-fluid">
