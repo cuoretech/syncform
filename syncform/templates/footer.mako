@@ -27,6 +27,3 @@
     <script src="${request.static_url('syncform:js/modernizr.custom.js')}"></script>
     <script src="${request.static_url('syncform:js/application.js')}"></script>
     <script src="${request.static_url('syncform:js/startup-kit.js')}"></script>
-
-
-    

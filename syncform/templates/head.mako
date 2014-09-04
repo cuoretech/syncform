@@ -1,4 +1,3 @@
-<head>
     <meta charset="utf-8">
     <title>Cuore SyncForm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,4 +57,3 @@
       <script src="${request.static_url('syncform:js/respond.min.js')}"></script>
       <script src="${request.static_url('syncform:js/icon-font-ie7.js')}"></script>
     <![endif]-->
-</head>
