@@ -1,2 +1,3 @@
 *.pyc
 syncform/*.pyc
+*.egg-info
