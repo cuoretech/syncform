@@ -1,0 +1,30 @@
+sudo service nginx restart
+pip install -r requirements.txt
+python server.py &
+source app_env/bin/activate
+
+
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew install python3
+brew install neo4j
+neo4j start
+mkdir data_service
+cd data_service
+pyvenv app_env
+source app_env/bin/activate
+app_env/bin/pip install "pyramid==1.5.2"
+app_env/bin/pip install py2neo
+app_env/bin/pip install cornice
+app_env/bin/pip install cherrypy
+app_env/bin/pip install virtualenv
+pcreate -t cornice api
+cd api
+pip freeze > requirements.txt
+pip install -r requirements.txt
+python3 setup.py develop
+
+
+http://localhost:6543/
+http://localhost:5000/
+http://localhost:7474/
