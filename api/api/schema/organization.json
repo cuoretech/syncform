@@ -1,4 +1,14 @@
 {"organizations":[
-{"name": "cuore", "type": "company", "founder": [{"fname": "leo", "lname": "schultz"},{"fname": "kevin", "lname": "ryan"}], "industry": [{"type": "electronics"}, {"type": "software"}], "links": [{"type": "website", "url": "http://cuore.io"}, {"type": "facebook", "url": "https://www.facebook.com/cuoretech"}], "locations":[{"type": "lab", "street":"PO Box 3595", "suite": "100", "city": "santa clara", "state": "california", "zip": "95055"},{"type": "headquarters", "street":"1144 maryvale dr", "suite": "", "city": "cheektowaga", "state": "new york", "zip": "14225"}]}
-
+{"name": "cuore", 
+"type": "company", 
+"founder": [{"fname": "leo", "lname": "schultz"},{"fname": "kevin", "lname": "ryan"}],
+"industry": [{"type": "electronics"}, {"type": "software"}], 
+"links": [{"type": "website", "url": "http://cuore.io"}, {"type": "facebook", "url": "https://www.facebook.com/cuoretech"}], 
+"locations":[{"type": "lab", "street":"PO Box 3595", "suite": "100", "city": "santa clara", "state": "california", "zip": "95055"},{"type": "headquarters", "street":"1144 maryvale dr", "suite": "", "city": "cheektowaga", "state": "new york", "zip": "14225"}]}
+{"name": "facebook", 
+"type": "company", 
+"founder": [{"fname": "mark", "lname": "zuckerberg"},{"fname": "eduardo", "lname": "saverin"}, {"fname": "andrew", "lname": "mccollum"}, {"fname": "dustin", "lname": "moskovitz"}, {"fname": "chris", "lname": "hughes"}],
+"industry": [{"type": "internet"}, {"type": "website"}],
+"links": [{"type": "website", "url": "https://www.facebook.com"}, {"type": "facebook", "url": "https://www.facebook.com/facebook"}], 
+"locations":[{"type": "headquarters", "street":"1601 willow rd", "suite": "", "city": "menlo park", "state": "california", "zip": "94025"}]}
 ]}

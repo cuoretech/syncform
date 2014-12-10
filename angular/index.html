@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html ng-app="mainApp"> <!--<![endif]-->
+<head>
+    <!-- //// TITLE \\\\ -->
+    <title>Cuore Developer Console</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="System Dashboard built-in AngularJS ">
+    <meta name="author" content="Thomas Hessler">
+    <meta name="keyword" content="cuore, technology, hardware, software, dashboard">
+
+    <!-- //// FAVICON \\\\ -->
+    <link rel="SHORTCUT ICON" href="images/favicon.ico" />
+
+    <!-- //// BOOTSTRAP \\\\ -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+    <!-- //// CSS \\\\ -->
+    <link href='css/fonts.css' rel="stylesheet"/>
+    <link href='css/style.css' rel="stylesheet"/>
+
+    <!-- //// ANGULAR \\\\ -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular-resource.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.5/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- //// IE \\\\ -->
+    <script>
+      var ie9 = false,
+          ie8 = false,
+          ie = false,
+          absurl = '/';
+    </script> 
+    
+    <!--[if lte IE 9 ]>
+      <script> var ie9 = true; </script>
+    <![endif]--> 
+
+    <!--[if lt IE 9 ]>
+      <script> var ie8 = true; </script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE]>
+      <script> var ie = true; </script>
+    <![endif]-->
+
+    <script src="js/modernizr.js"></script>
+</head>
+<body ng-controller="mainController">
+<section id="container">
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box" ng-click="navStatus = !navStatus">
+                  <div class="fa fa-reorder"></div>
+              </div>
+            <a href="#" class="logo">
+              <img class="logo" src="images/logo.svg">
+            </a>
+            <div class="nav notify-row" id="top_menu">
+                <ul class="nav top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-tasks"></i>
+                            <span class="badge bg-theme">4</span>
+                        </a>
+                        <ul class="dropdown-menu extended tasks-bar">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">You have 4 open projects</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Tesla Motors</div>
+                                        <div class="percent">Active</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            <span class="sr-only">Active  (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">GE Capital</div>
+                                        <div class="percent">60% Complete</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">Chipotle</div>
+                                        <div class="percent">Active</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            <span class="sr-only">Active</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="task-info">
+                                        <div class="desc">First Niagara</div>
+                                        <div class="percent">Attention Needed</div>
+                                    </div>
+                                    <div class="progress progress-striped">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                            <span class="sr-only">Attention Needed</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="external">
+                                <a href="#">See All Projects</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="header_inbox_bar" class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="index.html#">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="badge bg-theme">5</span>
+                        </a>
+                        <ul class="dropdown-menu extended inbox">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li>
+                                <p class="green">You have 5 new messages</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="images/ui-zac.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Zac Snider</span>
+                                    <span class="time">Just now</span>
+                                    </span>
+                                    <span class="message">
+                                        Hi mate, how is everything?
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="images/ui-divya.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Divya Manian</span>
+                                    <span class="time">40 mins.</span>
+                                    </span>
+                                    <span class="message">
+                                     Hi, I need your help with this.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="images/ui-dave.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">Dave Rogers</span>
+                                    <span class="time">2 hrs.</span>
+                                    </span>
+                                    <span class="message">
+                                        Love your new Dashboard.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="photo"><img alt="avatar" src="images/ui-sherman.jpg"></span>
+                                    <span class="subject">
+                                    <span class="from">John Sherman</span>
+                                    <span class="time">4 hrs.</span>
+                                    </span>
+                                    <span class="message">
+                                        Please, answer asap.
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#summary">See all messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-menu">
+              <ul class="nav pull-right top-menu">
+              </ul>
+            </div>
+        </header>
+      <aside>
+          <div id="sidebar"  class="nav-collapse" ng-class="{'nav-open' : navStatus, 'nav-close' : !navStatus}">
+              <ul class="sidebar-menu" id="nav-accordion">
+                  <p class="centered"><a href="#"><img src="images/ui-chelsea.jpg" class="img-circle" width="60"></a></p>
+                  <h5 class="centered">Chelsea Schultz</h5>
+                    
+                  <li class="mt">
+                      <a href="#">
+                          <i class="fa fa-bar-chart-o"></i>
+                          <span>Project List</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="#leads">
+                          <i class="fa fa-tasks"></i>
+                          <span>APIs</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="#prospects">
+                          <i class="fa fa-th"></i>
+                          <span>Monitoring</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="#closing">
+                          <i class="fa fa-dashboard"></i>
+                          <span>Settings</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="#summary">
+                          <i class="fa fa-desktop"></i>
+                          <span>Billing</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="#contacts">
+                          <i class="fa fa-group"></i>
+                          <span>Legal</span>
+                      </a>
+                  </li>
+                  <li class="mt">
+                      <a href="../../syncform/login.html">
+                          <span>Logout</span>
+                      </a>
+                  </li>
+<!--                   <li class="mt">
+                      <a href="#admin">
+                          <i class="fa fa-cogs"></i>
+                          <span>Admin</span>
+                      </a>
+                  </li> -->
+              </ul>
+          </div>
+      </aside>
+      <section id="main-content" ng-class="{'main-open' : navStatus, 'main-close' : !navStatus}">
+        <div ng-view></div>
+      </section>
+      <footer class="site-footer">
+          <div class="text-center">
+              2014 - Cuore Technology | <a>About</a> | <a>Legal</a> 
+          </div>
+      </footer>
+  </section>
+
+
+  <!-- jQuery --> 
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script> 
+</body>
+</html>

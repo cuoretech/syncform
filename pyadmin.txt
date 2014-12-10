@@ -23,6 +23,7 @@ cd api
 pip freeze > requirements.txt
 pip install -r requirements.txt
 python3 setup.py develop
+pserve —-reload api.ini
 
 
 http://localhost:6543/
