@@ -17,9 +17,9 @@
 			controller: 'projectController'
 		})
 
-		// prospects view
+		// new project view
 		.when('/new-project', {
-			templateUrl: 'views/new-project',
+			templateUrl: 'views/new-project.html',
 			controller: 'new-projectController'
 		})
 
@@ -110,24 +110,23 @@
 
 		$scope.donutchart = {
 			data: [
-				{label: "Upset", value: 12},
-				{label: "Happy", value: 30},
-				{label: "Content", value: 20}
+				{label: "Percent Used", value: 23},
+				{label: "Percent Free", value: 77}
 			],
 			labelColor: '#fff',
-  			colors: ['#fff','#efefef','#cfcfcf']
+  			colors: ['#a90d15','#efefef','#a90d15']
 		};
 
 	});
 
 	mainApp.controller('projectController', function($scope) {
-		$scope.title = 'Project Lists';
-		$scope.slogan = 'Find Your Projects Here!';
-	});
-
-	mainApp.controller('lolzController', function($scope) {
 		$scope.title = 'Project';
 		$scope.slogan = 'Singular Project View';
+	});
+
+	mainApp.controller('new-projectController', function($scope) {
+		$scope.title = 'New-Project';
+		$scope.slogan = 'Create Your New Project';
 	});
 
 	mainApp.controller('closingController', function($scope) {

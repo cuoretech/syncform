@@ -2957,6 +2957,14 @@ label {
     padding-top: 20px;
 }
 
+.menu-overlay-close-list {
+    width: inherit!important;
+    height: inherit!important;
+    position: relative!important;
+    z-index: 100!important;
+    padding-top: 20px;
+}
+
 .menu-overlay-close img{
     cursor:pointer;
     width:25px;
@@ -3181,6 +3189,11 @@ overflow: hidden;
 /*CSS counters to number the steps*/
 counter-reset: step;
 }
+
+.progressbar {
+    margin-bottom: 20px;
+}
+
 
 #progressbar li {
 list-style-type: none;
