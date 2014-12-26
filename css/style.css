@@ -178,18 +178,29 @@ text-align: start;}
 	padding: 20px;
 }
 
+.btn-sexy-sm{
+    padding:5px;
+    background-color: #282828;
+    outline:none;
+}
+
+.btn-sexy-sm:hover {
+    opacity: .4;
+}
+
 .btn-sexy:hover {
 	opacity: .4;
 }
 
 a:hover{
-    opacity:.7;
+    opacity:1;
+    color: #a90d15;
 }
 
 /*leo's site css*/
 body {
     color: #ffffff;
-	background: #000000;
+	background: #282828;
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -206,11 +217,11 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #000000;
+    background: #282828;
     color: #fff;
 }
 ::-moz-selection {
-    background: #000000;
+    background: #282828;
     color: #fff;
 }
 
@@ -221,7 +232,7 @@ a, a:hover, a:focus {
 
 /* Bootstrap Mods */
 .modal-header {
-	background: #000000;
+	background: #282828;
 }
 
 .modal-title {
@@ -253,7 +264,7 @@ a, a:hover, a:focus {
 /*Theme Backgrounds*/
 
 .bg-theme {
-	/*background-color: #000000;*/
+	/*background-color: #282828;*/
     background-color: none!important;
 }
 
@@ -273,7 +284,7 @@ a, a:hover, a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #000000;
+  background-color: #282828;
   border-color: #48bcb4;
 }
 .btn-theme:hover,
@@ -387,11 +398,11 @@ hr {
 /* Colors Configuration */
 
 .label-theme {
-	/*background-color: #000000;*/
+	/*background-color: #282828;*/
 }
 
 .bg-theme {
-	/*background-color: #000000;*/
+	/*background-color: #282828;*/
 }
 
 ul.top-menu > li > .logout {
@@ -414,7 +425,7 @@ color: #CFCFCF !important;
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #000000;
+    background: #282828;
 }
 
 #sidebar h5 {
@@ -505,7 +516,7 @@ ul.sidebar-menu li ul.sub li a:hover {
 }
 
 ul.sidebar-menu li ul.sub li.active a {
-    color: #000000;
+    color: #282828;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -591,8 +602,8 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #000000;
-    border-bottom: 1px solid #000000;
+    background: #282828;
+    border-bottom: 1px solid #282828;
 }
 
 .wrapper {
@@ -625,7 +636,7 @@ a.logo:hover, a.logo:focus {
 }
 
 a.logo span {
-    color: #000000;
+    color: #282828;
 }
 
 
@@ -700,7 +711,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .dropdown-menu.extended li p.green {
-    background-color: #000000;
+    background-color: #282828;
     color: #fff;
 }
 
@@ -917,9 +928,9 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     border-top-color: #FCB322 !important;
 }
 .notify-arrow-green {
-    border-color: transparent transparent #000000;
-    border-bottom-color: #000000 !important;
-    border-top-color: #000000 !important;
+    border-color: transparent transparent #282828;
+    border-bottom-color: #282828 !important;
+    border-top-color: #282828 !important;
 }
 
 
@@ -1015,7 +1026,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .ds a {
-	color: #000000;
+	color: #282828;
 }
 
 /* LINE ICONS CONFIGURATION */
@@ -1283,7 +1294,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 /* green panel */
 .green-panel {
 	text-align: center;
-	background: #000000;
+	background: #282828;
 }
 .green-panel .green-header {
 	background: #43b1a9;
@@ -1327,7 +1338,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .white-panel i {
-	color: #000000;
+	color: #282828;
 	padding-right: 4px;
 	font-size: 14px;
 }
@@ -1834,7 +1845,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 .steps input[type=submit]:hover{
   background: #fff;
-  color: #000000
+  color: #282828
 }
 .steps label{
   height: 50px;
@@ -1864,7 +1875,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 .steps label:hover{
   background: #fff;
-  color: #000000
+  color: #282828
 }
 .steps label:hover:before{
   border: 1px solid #46b7e5;
@@ -1906,7 +1917,7 @@ div.zabuto_calendar div.legend span.badge {
 	font-weight: 900;
 }
 .profile-01 {
-	background: #000000;
+	background: #282828;
 	height: 50px;
 }
 .profile-01:hover {
@@ -1953,7 +1964,7 @@ div.zabuto_calendar div.legend span.badge {
 	color: #cdcdcd;
 }
 .pr2-social a:hover {
-	color: #000000;
+	color: #282828;
 }
 .pr2-social i {
 	margin-top: 15px;
@@ -2009,7 +2020,7 @@ div.zabuto_calendar div.legend span.badge {
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle .value a:hover, .panel.terques-chart .chart-tittle .value a.active {
-    color: #000000;
+    color: #282828;
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle {
@@ -2064,7 +2075,7 @@ div.zabuto_calendar div.legend span.badge {
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #282828;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -2084,7 +2095,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .project:hover .photo-wrapper {
-  background-color: #000000;
+  background-color: #282828;
 	background-image:url(../images/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -2325,7 +2336,7 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #000000;
+	background: #282828;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	color: #fff;
@@ -2915,7 +2926,7 @@ label {
 }
 
 .site-footer footer{
-    background: #000000;
+    background: #282828;
     color: #fff;
     padding: 10px 0;
     font-size: 15px;

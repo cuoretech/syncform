@@ -23,22 +23,28 @@
 			controller: 'new-projectController'
 		})
 
-		// closing view
-		.when('/closing', {
-			templateUrl: 'views/closing.html',
-			controller: 'closingController'
+		// recent bills view
+		.when('/recentbills', {
+			templateUrl: 'views/recentbills.html',
+			controller: 'recentbillsController'
 		})
 
-		// summary view
-		.when('/summary', {
-			templateUrl: 'views/summary.html',
-			controller: 'summaryController'
+		// upcoming bills view
+		.when('/upcomingbills', {
+			templateUrl: 'views/upcomingbills.html',
+			controller: 'upcomingbillsController'
 		})
 
-		// contacts view
-		.when('/contacts', {
-			templateUrl: 'views/contact.html',
-			controller: 'contactController'
+		// list of api's view
+		.when('/apilist', {
+			templateUrl: 'views/apilist.html',
+			controller: 'apilistController'
+		})
+
+		// list of api's view
+		.when('/monitoring', {
+			templateUrl: 'views/monitoring.html',
+			controller: 'monitoringController'
 		})
 
 		// add contacts view
@@ -122,6 +128,17 @@
 	mainApp.controller('projectController', function($scope) {
 		$scope.title = 'Project';
 		$scope.slogan = 'Singular Project View';
+		// $scope.billings = get_billings.get();
+		// $scope.billings = get_billings.query();
+		$scope.billings = [
+		{billdate:"12-08-2014", amount:500, requests:100000, startdate:"11-01-2014", enddate:"11-30-2014"},
+		{billdate:"11-08-2014", amount:500, requests:100000, startdate:"10-01-2014", enddate:"10-31-2014"},
+		{billdate:"10-08-2014", amount:500, requests:100000, startdate:"09-01-2014", enddate:"09-30-2014"},
+		{billdate:"09-08-2014", amount:500, requests:100000, startdate:"08-01-2014", enddate:"08-31-2014"},
+		{billdate:"08-08-2014", amount:500, requests:100000, startdate:"07-01-2014", enddate:"07-30-2014"},
+		{billdate:"07-08-2014", amount:500, requests:100000, startdate:"06-01-2014", enddate:"06-30-2014"},
+		{billdate:"06-08-2014", amount:500, requests:100000, startdate:"05-01-2014", enddate:"05-31-2014"},
+		]
 	});
 
 	mainApp.controller('new-projectController', function($scope) {
@@ -129,19 +146,19 @@
 		$scope.slogan = 'Create Your New Project';
 	});
 
-	mainApp.controller('closingController', function($scope) {
-		$scope.title = 'Closing';
-		$scope.slogan = 'Staying in Touch Made Easy';
+	mainApp.controller('recentbillsController', function($scope) {
+		$scope.title = 'Recent Bills';
+		$scope.slogan = 'What You Been Spendin Yo Money On?';
 	});
 
-	mainApp.controller('summaryController', function($scope) {
-		$scope.title = 'Summary';
-		$scope.slogan = 'Staying in Touch Made Easy';
+	mainApp.controller('upcomingbillsController', function($scope) {
+		$scope.title = 'Upcoming Bills';
+		$scope.slogan = 'What You Be Spendin Yo Money On Next';
 	});
 
-	mainApp.controller('contactController', function($scope) {
-		$scope.title = 'Contacts';
-		$scope.slogan = 'Staying in Touch Made Easy';
+	mainApp.controller('apilistController', function($scope) {
+		$scope.title = 'API List';
+		$scope.slogan = 'What APIs You Be Usin';
 	});
 
 	mainApp.controller('addController', function($scope) {
@@ -234,3 +251,4 @@
   //       }
   //   });
   // });
+
