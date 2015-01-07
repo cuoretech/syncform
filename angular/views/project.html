@@ -23,55 +23,18 @@
               </tr>
               </thead>
               <tbody>
-              <tr>
-                  <td>NameofAPI</td>
+              <tr ng-repeat="apilist in apilists">
+                  <td>{{ apilist.name }}</td>
                   <td>
                     <div class="switch white">
-                      <input type="radio" name="switch" id="switch-off">
-                      <input type="radio" name="switch" id="switch-on" checked>
+                      <input type="radio" name="{{ apilist.inputname }}" id="switch-off" {{ apilist.idoff }}>
+                      <input type="radio" name="{{ apilist.inputname }}" id="switch-on" {{ apilist.id }}>
                       <label for="switch-off">Off</label>
                       <label for="switch-on">On</label>
                       <span class="toggle"></span>
                     </div>
                   </td>
                 </tr>
-              <tr>
-                  <td>NameofAPI</td>
-                  <td>
-                    <div class="switch white">
-                      <input type="radio" name="switch1" id="switch-off">
-                      <input type="radio" name="switch1" id="switch-on" checked>
-                      <label for="switch-off">Off</label>
-                      <label for="switch-on">On</label>
-                      <span class="toggle"></span>
-                    </div>
-                  </td>
-                </tr>
-              <tr>
-                  <td>NameofAPI</td>
-                  <td>
-                    <div class="switch white">
-                      <input type="radio" name="switch2" id="switch-off">
-                      <input type="radio" name="switch2" id="switch-on" checked>
-                      <label for="switch-off">Off</label>
-                      <label for="switch-on">On</label>
-                      <span class="toggle"></span>
-                    </div>
-                  </td>
-                </tr>
-              <tr>
-                  <td>NameofAPI</td>
-                  <td>
-                    <div class="switch white">
-                      <input type="radio" name="switch3" id="switch-off">
-                      <input type="radio" name="switch3" id="switch-on" checked>
-                      <label for="switch-off">Off</label>
-                      <label for="switch-on">On</label>
-                      <span class="toggle"></span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
           </table>
           <div class="text-center">
             <a href="#apilist"><p>See All APIs</p></a>
@@ -129,43 +92,34 @@
 <div class="col-lg-4 col-md-4 col-sm-4 top-buffer-sm">
 	<div class="pn">
     	<div class="border-head">
-            <h3>Recent Billing Cycles</h3>
+            <h3>Billing Overview</h3>
         </div>
 		<div class="col-lg-12">
           <table class="table">
               <thead>
               <tr>
-                  <th>Date</th>
+                  <th>Bill Date</th>
                   <th>Amount</th>
+                  <th>Requests</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
               </tr>
               </thead>
-              <tbody>
+              <tbody ng-repeat="billing in billings">
               <tr>
-                  <td>12/08</td>
-                  <td>Fees Waived Per Thomas Executive Order</td>
-              </tbody>
+                  <td>{{ billing.billdate }}</td>
+                  <td>{{ billing.amount }}</td>
+                  <td>{{ billing.requests }}</td>
+                  <td>{{ billing.startdate }}</td>
+                  <td>{{ billing.startdate }}</td>
               </tr>
-              <tr>
-                  <td>12/01</td>
-                  <td>Fees Waived Per Thomas Executive Order</td>
               </tbody>
-              </tr>
-              <tr>
-                  <td>11/24</td>
-                  <td>Fees Waived Per Thomas Executive Order</td>
-              </tbody>
-              </tr>
-              <tr>
-                  <td>11/17</td>
-                  <td>Fees Waived Per Thomas Executive Order</td>
-              </tbody>
-              </tr>
           </table>
           <div class="text-center">
-            <a href="#recentbills"><p>See All Previous Billing Cycles</p></a>
+            <a href="#recentbills"><p>See All Billing Cycles</p></a>
           </div>
         </div>
-    <div class="border-head">
+<!--     <div class="border-head">
         <h3>Upcoming Billing Cycles</h3>
     </div>
     <div class="col-lg-12">
@@ -198,7 +152,7 @@
           <div class="text-center">
             <a href="#upcomingbills"><p>See All Upcoming Billing Cycles</p></a>
           </div>
-    </div>
+    </div> -->
 
 	</div>
 </div>

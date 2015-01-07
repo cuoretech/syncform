@@ -18,40 +18,13 @@
 	              </tr>
 	              </thead>
 	              <tbody>
-	              <tr>
-	                  <td>12/22</td>
-	                  <td><a href="#project">ProjectName</a></td>
-	                  <td>021292</td>
-	                  <td>1</td>
-	                  <td>0</td>
-	                  <td>None</td>
-	                  <td><a href="/syncform/angular/#"><btn class="btn-sexy-sm" type="submit">Delete</btn></a></td>
-	              </tr>
-	              <tr>
-	                  <td>12/14</td>
-	                  <td>ProjectName</td>
-	                  <td>072793</td>
-	                  <td>1</td>
-	                  <td>0</td>
-	                  <td>$.01 on 12/14 to xxxx-5635</td>
-	                  <td><a href="/syncform/angular/#"><btn class="btn-sexy-sm" type="submit">Delete</btn></a></td>
-	              </tr>
-	              <tr>
-	                  <td>12/14</td>
-	                  <td>ProjectName</td>
-	                  <td>072793</td>
-	                  <td>1</td>
-	                  <td>0</td>
-	                  <td>$.01 on 12/14 to xxxx-5635</td>
-	                  <td><a href="/syncform/angular/#"><btn class="btn-sexy-sm" type="submit">Delete</btn></a></td>
-	              </tr>
-	              <tr>
-	                  <td>12/14</td>
-	                  <td>ProjectName</td>
-	                  <td>072793</td>
-	                  <td>1</td>
-	                  <td>0</td>
-	                  <td>$.01 on 12/14 to xxxx-5635</td>
+	              <tr ng-repeat="projectlist in projectlists">
+	                  <td>{{ projectlist.createdate }}</td>
+	                  <td><a href="#project">{{ projectlist.projectname }}</a></td>
+	                  <td>{{ projectlist.projectid }}</td>
+	                  <td>{{ projectlist.requests }}</td>
+	                  <td>{{ projectlist.errors }}</td>
+	                  <td>{{ projectlist.charges }}</td>
 	                  <td><a href="/syncform/angular/#"><btn class="btn-sexy-sm" type="submit">Delete</btn></a></td>
 	              </tr>
 	              </tbody>

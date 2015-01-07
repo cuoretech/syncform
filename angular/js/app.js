@@ -123,6 +123,15 @@
   			colors: ['#a90d15','#efefef','#a90d15']
 		};
 
+		$scope.title = 'Project List';
+		$scope.slogan = 'Your List of Open Projects';
+		$scope.projectlists = [
+		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		{createdate:"12-15-2014", projectname:"Thomas's Project", projectid:"072793", requests:"50000", errors:"0", charges:"0"},
+		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		]
 	});
 
 	mainApp.controller('projectController', function($scope) {
@@ -139,6 +148,15 @@
 		{billdate:"07-08-2014", amount:500, requests:100000, startdate:"06-01-2014", enddate:"06-30-2014"},
 		{billdate:"06-08-2014", amount:500, requests:100000, startdate:"05-01-2014", enddate:"05-31-2014"},
 		]
+
+		$scope.apilists = [
+		{name:"NameOfAPI", inputname:"switch1", id:"checked"},
+		{name:"NameOfAPI", inputname:"switch2", idoff:"checked"},
+		{name:"NameOfAPI", inputname:"switch3", id:"checked"},
+		{name:"NameOfAPI", inputname:"switch4", idoff:"checked"},
+		{name:"NameOfAPI", inputname:"switch5", id:"checked"},
+		]
+
 	});
 
 	mainApp.controller('new-projectController', function($scope) {
