@@ -22,7 +22,6 @@ $(".menu-overlay-close").click(function () {
           $(".menu-overlay").fadeOut(750);
        });
 
-
 $(".menu-overlay-close-list").click(function () {
           $(".menu-overlay").fadeOut(750);
        });

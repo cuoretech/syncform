@@ -19,12 +19,29 @@ a:hover{color: white;text-decoration: none;}
 	width: 150px;
 }
 
+.addmember{
+    width:50px;
+    padding-left: 20px;
+}
+
+.addmembertext{
+    padding-left: 20px;
+}
+
 .titlelogo{
 	width: 500px;
 }
 
 .top-buffer{
-	padding-top: 10%;
+	padding-top: 100px;
+}
+
+.top-buffer-md{
+    padding-top: 50px;
+}
+
+.top-buffer-sm{
+    padding-top: 25px;
 }
 
 .bottom-buffer{
@@ -42,15 +59,12 @@ a:hover{color: white;text-decoration: none;}
 p{font-family: "line", Georgia, Serif;}
 
 footer{
-	font-size: 60px;
+	font-size: 15px;
 }
 
-footer a, footer a:visited{
-	opacity: .2;
-}
 
 footer a:hover, footer a:active{
-	opacity: 1;
+	opacity: .2;
 }
 
 h1{
@@ -178,29 +192,18 @@ text-align: start;}
 	padding: 20px;
 }
 
-.btn-sexy-sm{
-    padding:5px;
-    background-color: #282828;
-    outline:none;
-}
-
-.btn-sexy-sm:hover {
-    opacity: .4;
-}
-
 .btn-sexy:hover {
 	opacity: .4;
 }
 
 a:hover{
-    opacity:1;
-    color: #a90d15;
+    opacity:.7;
 }
 
 /*leo's site css*/
 body {
     color: #ffffff;
-	background: #282828;
+	background: #000000;
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
@@ -217,11 +220,11 @@ a, a:hover, a:focus {
 }
 ::selection {
 
-    background: #282828;
+    background: #000000;
     color: #fff;
 }
 ::-moz-selection {
-    background: #282828;
+    background: #000000;
     color: #fff;
 }
 
@@ -232,7 +235,7 @@ a, a:hover, a:focus {
 
 /* Bootstrap Mods */
 .modal-header {
-	background: #282828;
+	background: #000000;
 }
 
 .modal-title {
@@ -264,7 +267,7 @@ a, a:hover, a:focus {
 /*Theme Backgrounds*/
 
 .bg-theme {
-	/*background-color: #282828;*/
+	/*background-color: #000000;*/
     background-color: none!important;
 }
 
@@ -284,7 +287,7 @@ a, a:hover, a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #282828;
+  background-color: #000000;
   border-color: #48bcb4;
 }
 .btn-theme:hover,
@@ -398,11 +401,11 @@ hr {
 /* Colors Configuration */
 
 .label-theme {
-	/*background-color: #282828;*/
+	/*background-color: #000000;*/
 }
 
 .bg-theme {
-	/*background-color: #282828;*/
+	/*background-color: #000000;*/
 }
 
 ul.top-menu > li > .logout {
@@ -425,7 +428,7 @@ color: #CFCFCF !important;
     width: 210px;
     height: 100%;
     position: fixed;
-    background: #282828;
+    background: #000000;
 }
 
 #sidebar h5 {
@@ -516,7 +519,7 @@ ul.sidebar-menu li ul.sub li a:hover {
 }
 
 ul.sidebar-menu li ul.sub li.active a {
-    color: #282828;
+    color: #000000;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -602,8 +605,8 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #282828;
-    border-bottom: 1px solid #282828;
+    background: #000000;
+    border-bottom: 1px solid #000000;
 }
 
 .wrapper {
@@ -636,7 +639,7 @@ a.logo:hover, a.logo:focus {
 }
 
 a.logo span {
-    color: #282828;
+    color: #000000;
 }
 
 
@@ -711,7 +714,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .dropdown-menu.extended li p.green {
-    background-color: #282828;
+    background-color: #000000;
     color: #fff;
 }
 
@@ -743,7 +746,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .task-info {
-    padding-top:100px;
+    padding-top:0px;
 }
 
 .dropdown-menu.tasks-bar .task-info .percent {
@@ -928,9 +931,9 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
     border-top-color: #FCB322 !important;
 }
 .notify-arrow-green {
-    border-color: transparent transparent #282828;
-    border-bottom-color: #282828 !important;
-    border-top-color: #282828 !important;
+    border-color: transparent transparent #000000;
+    border-bottom-color: #000000 !important;
+    border-top-color: #000000 !important;
 }
 
 
@@ -1026,7 +1029,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .ds a {
-	color: #282828;
+	color: #000000;
 }
 
 /* LINE ICONS CONFIGURATION */
@@ -1080,7 +1083,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .border-head h3 {
-    margin-top: 20px;
+    margin-top: 0px;
 	margin-left: 15px;	
     padding-bottom: 5px;
     font-weight: normal;
@@ -1216,11 +1219,13 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .donut-main {
 	display: block;
 	text-align: center;
+    font-family: 'line';
 }
 
 .donut-main h4 {
 	font-weight: 700;
 	font-size: 16px;
+    font-family: 'line';
 }
 
 /*Panel Size*/
@@ -1256,11 +1261,13 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 	margin-top: 5px;
 	font-weight: 700;
 	margin-left: 15px;
+    font-family: 'line';
 }
 .donut-chart h2 {
 	font-weight: 900;
 	color: #FF6B6B;
 	font-size: 38px;
+    font-family: 'line'
 }
 
 /* dark blue*/
@@ -1294,7 +1301,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 /* green panel */
 .green-panel {
 	text-align: center;
-	background: #282828;
+	background: #000000;
 }
 .green-panel .green-header {
 	background: #43b1a9;
@@ -1338,7 +1345,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .white-panel i {
-	color: #282828;
+	color: #000000;
 	padding-right: 4px;
 	font-size: 14px;
 }
@@ -1845,7 +1852,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 .steps input[type=submit]:hover{
   background: #fff;
-  color: #282828
+  color: #000000
 }
 .steps label{
   height: 50px;
@@ -1875,7 +1882,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 .steps label:hover{
   background: #fff;
-  color: #282828
+  color: #000000
 }
 .steps label:hover:before{
   border: 1px solid #46b7e5;
@@ -1917,7 +1924,7 @@ div.zabuto_calendar div.legend span.badge {
 	font-weight: 900;
 }
 .profile-01 {
-	background: #282828;
+	background: #000000;
 	height: 50px;
 }
 .profile-01:hover {
@@ -1964,7 +1971,7 @@ div.zabuto_calendar div.legend span.badge {
 	color: #cdcdcd;
 }
 .pr2-social a:hover {
-	color: #282828;
+	color: #000000;
 }
 .pr2-social i {
 	margin-top: 15px;
@@ -2020,7 +2027,7 @@ div.zabuto_calendar div.legend span.badge {
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle .value a:hover, .panel.terques-chart .chart-tittle .value a.active {
-    color: #282828;
+    color: #000000;
     font-size: 12px;
 }
 .panel.terques-chart .chart-tittle {
@@ -2075,7 +2082,7 @@ div.zabuto_calendar div.legend span.badge {
   display: block;
   position: relative;
   overflow: hidden;
-  background-color: #282828;
+  background-color: #000000;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -o-transition: background-color 0.4s;
@@ -2095,7 +2102,7 @@ div.zabuto_calendar div.legend span.badge {
 }
 
 .project:hover .photo-wrapper {
-  background-color: #282828;
+  background-color: #000000;
 	background-image:url(../images/zoom.png);
 	background-repeat:no-repeat;
 	background-position:center;
@@ -2189,7 +2196,7 @@ label {
     cursor: pointer;
     line-height: 1.231;
     overflow: hidden;
-    position: relative;
+    position: fixed;
     text-align: left;
     width: 80px;
     -webkit-mask: url('../images/mask.png') 0 0 no-repeat;
@@ -2336,7 +2343,7 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #282828;
+	background: #000000;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
 	color: #fff;
@@ -2925,193 +2932,97 @@ label {
     }
 }
 
-.site-footer footer{
-    background: #282828;
+.site-footer {
+    background: #000000;
     color: #fff;
     padding: 10px 0;
+}
+
+/*On/Off API List Switch*/
+
+.switch {
+    background: #fff;
+    border-radius: 30%;
+    display: block;
+    height: 28px;
+    position: relative;
+    width: 50px;
+}
+
+.switch label {
+    color: #fff;
     font-size: 15px;
+    font-weight: 300;
+    line-height: 15px;
+    text-transform: uppercase;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+    width: 100px;
 }
 
-/* menu-overlay style */
-.menu-overlay {
-    display: none;
-    visibility: none!important;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index:3000;
-    background: rgba(42, 40, 40, 1);
-    overflow-y: scroll;
-}
-
-.menu-overlay-section{
-    position: fixed;
-}
-
-.menu-overlay-title h4{
-    background-color:#2a2828!important;
-    color:#fff!important;
-
-}
-
-
-/* menu-overlay closing cross */
-.menu-overlay .menu-overlay-close {
-    width: 80px;
-    height: 80px;
+.switch label:nth-of-type(1) {
+    left: -170%;
+    top: 20%;
     position: absolute;
-    right: 50px;
-    top: 17px;
-    z-index: 100;
-    padding-top: 20px;
+    text-align: right;
 }
 
-.menu-overlay-close-list {
-    width: inherit!important;
-    height: inherit!important;
-    position: relative!important;
-    z-index: 100!important;
-    padding-top: 20px;
+.switch label:nth-of-type(2) {
+    position: absolute;
+    right: -150%;
+    bottom: -2%;
+    text-align: left;
 }
 
-.menu-overlay-close img{
-    cursor:pointer;
-    width:25px;
+.switch input {
+    height: 64px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 160px;
+    z-index: 2;
 }
 
-.menu-overlay-close i{
-    color: #A90D15;
-    cursor: pointer;
-    padding-left: 105px;
-    margin-top: -25px;
+.switch input:checked~label:nth-of-type(1) { color: #A90D15; }
+.switch input:checked~label:nth-of-type(2) { font-weight:bold; color: #808080; }
+
+.switch input~:checked~label:nth-of-type(1) { color: #808080; }
+.switch input~:checked~label:nth-of-type(2) { font-weight:bold; color: #A90D15; }
+
+.switch input:checked~.toggle {
+    left: 4px;
 }
 
-/* Menu style */
-.menu-overlay nav {
-    text-align: center;
-    position: relative;
-    top: 50%;
-    height: 60%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.switch input~:checked~.toggle {
+    left: 26px;
 }
 
-.menu-overlay h4{
-    font-size: 25px;
-    display: block;
-    color: #fff;
-    background-clip: padding-box;
-    background-color: #cccccb;
-    opacity: .4;
-    padding: 5px 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
+.switch input:checked {
+    z-index: 0;
 }
 
-
-.menu-overlay ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    height: 100%;
-    position: relative;
+.toggle {
+    background: #4a4a4a;
+    border-radius: 30%;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    -webkit-transition: left .2s ease;
+    -moz-transition: left .2s ease;
+    -ms-transition: left .2s ease;
+    -o-transition: left .2s ease;
+    transition: left .2s ease;
+    width: 20px;
+    z-index: 1;
 }
 
-.menu-overlay ul li {
-    display: block;
-    height: 20%;
-    height: calc(100% / 5);
-    min-height: 20px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.menu-overlay ul li a{
-    font-size: 20px;
-    display: block;
-    color: #fff;
-    font-weight: normal;
-    text-transform: uppercase;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
-}
-
-
-.menu-overlay ul li a:hover,
-.menu-overlay ul li a:focus {
-    opacity: .5;
-
-}
-
-.menu-header a img:hover {
-    opacity:.7;
-}
-
-.menu-search img{
-    width:50px;
-    padding-left: 20px;
-    padding-top: 10px;
-    cursor:pointer;
-}
-
-.menu-center img{
+.resize div{
     max-width: 50px;
-    margin: auto;
-}
-
-.menu-header-wrapper{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color:#2a2828;
-}
-
-.searchbarstyle{
-    width: 100%;
-    background-color: #333;
-    border: none;
-    padding: 1%;
-    font-size: 1.5em;
-    display: none;
-}
-
-.searchbarstyle input{
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    color:white;
-    display: inline-block;
-    text-align: start;
-}
-
-/*search result styling*/
-#resultsDiv a{
-    font-size: 20px;
-    letter-spacing: normal;
-    color: initial;
-    padding:1%;
-    color: white;
-}
-
-#resultsDiv a:hover{
-    opacity:.7;
-}
-
-#resultsDiv p{
-    color:white;
-    font-weight: 10px;
-    text-indent: 20px;
-}
-
-.pointercursor{
-    cursor: pointer;
 }
 
 /*Step Login*/
@@ -3123,9 +3034,9 @@ padding: 0;
 html {
 height: 100%;
 /*Image only BG fallback*/
-background: url('http://thecodeplayer.com/uploads/media/gs.png');
+background: #000000;
 /*background = gradient + image pattern combo*/
-background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),  url('http://thecodeplayer.com/uploads/media/gs.png');
+background: #000000;
 }
 body {
 font-family: 'line', arial, verdana;
@@ -3193,6 +3104,60 @@ font-size: 13px;
 color: #666;
 margin-bottom: 20px;
 }
+
+/*change margin-bottom for newproject*/
+#newproject{
+margin-bottom: 20px;
+overflow: hidden;
+/*CSS counters to number the steps*/
+counter-reset: step;
+}
+
+#newproject li {
+list-style-type: none;
+color: white;
+text-transform: uppercase;
+font-size: 9px;
+width: 33.33%;
+float: left;
+position: relative;
+}
+
+#newproject li:before {
+content: counter(step);
+counter-increment: step;
+width: 20px;
+line-height: 20px;
+display: block;
+font-size: 10px;
+color: #333;
+background: white;
+border-radius: 3px;
+margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+#newproject li:after {
+content: '';
+width: 100%;
+height: 2px;
+background: white;
+position: absolute;
+left: -50%;
+top: 9px;
+z-index: -1; /*put it behind the numbers*/
+}
+#newproject li:first-child:after {
+/*connector not needed before the first step*/
+content: none;
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#newproject li.active:before, #newproject li.active:after {
+background: #A90D15;
+color: white;
+}
+
 /*progressbar*/
 #progressbar {
 margin-bottom: -650px;
@@ -3200,11 +3165,6 @@ overflow: hidden;
 /*CSS counters to number the steps*/
 counter-reset: step;
 }
-
-.progressbar {
-    margin-bottom: 20px;
-}
-
 
 #progressbar li {
 list-style-type: none;
@@ -3227,6 +3187,7 @@ background: white;
 border-radius: 3px;
 margin: 0 auto 5px auto;
 }
+
 /*progressbar connectors*/
 #progressbar li:after {
 content: '';
@@ -3249,7 +3210,6 @@ background: #A90D15;
 color: white;
 }
 
-/*image small*/
-.imgsmall img{
-    max-width: 10px;
+#iagree{
+    margin-top: -19px;
 }
