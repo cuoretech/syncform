@@ -62,12 +62,9 @@ footer{
 	font-size: 15px;
 }
 
-footer a, footer a:visited{
-	opacity: .2;
-}
 
 footer a:hover, footer a:active{
-	opacity: 1;
+	opacity: .2;
 }
 
 h1{

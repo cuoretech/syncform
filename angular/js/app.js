@@ -41,6 +41,24 @@
 			controller: 'apilistController'
 		})
 
+		// about syncform
+		.when('/about', {
+			templateUrl: 'views/about.html',
+			controller: 'aboutController'
+		})
+
+		// legal
+		.when('/legal', {
+			templateUrl: 'views/legal.html',
+			controller: 'legalController'
+		})
+
+		// credentials
+		.when('/credentials', {
+			templateUrl: 'views/credentials.html',
+			controller: 'credentialsController'
+		})
+
 		// list of api's view
 		.when('/monitoring', {
 			templateUrl: 'views/monitoring.html',
@@ -177,6 +195,21 @@
 	mainApp.controller('apilistController', function($scope) {
 		$scope.title = 'API List';
 		$scope.slogan = 'What APIs You Be Usin';
+	});
+
+	mainApp.controller('aboutController', function($scope) {
+		$scope.title = 'About';
+		$scope.slogan = 'About Us';
+	});
+
+	mainApp.controller('legalController', function($scope) {
+		$scope.title = 'Legal';
+		$scope.slogan = 'Legal';
+	});
+
+	mainApp.controller('credentialsController', function($scope) {
+		$scope.title = 'Credentials';
+		$scope.slogan = 'Oauth and Public Access Keys for your Project';
 	});
 
 	mainApp.controller('addController', function($scope) {
