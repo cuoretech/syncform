@@ -4,7 +4,6 @@ import json
 from webob import Response, exc
 from cornice import Service
 from pprint import pprint
-from py2neo import neo4j
 
 index = Service(name='index', path='/', description="simplest app")
 auth = Service(name='auth', path='/auth', description="app for auth")
