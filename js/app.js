@@ -143,13 +143,14 @@
 
 		$scope.title = 'Project List';
 		$scope.slogan = 'Your List of Open Projects';
-		$scope.projectlists = [
-		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
-		{createdate:"12-15-2014", projectname:"Thomas's Project", projectid:"072793", requests:"50000", errors:"0", charges:"0"},
-		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
-		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
-		{createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
-		]
+		$scope.projectlists = get_projectlist.query();
+		// $scope.projectlists = [
+		// {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		// {createdate:"12-15-2014", projectname:"Thomas's Project", projectid:"072793", requests:"50000", errors:"0", charges:"0"},
+		// {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		// {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		// {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+		// ]
 	});
 
 	mainApp.controller('projectController', function($scope) {
@@ -294,6 +295,14 @@
 	      }
 	    }
 	});
+
+  mainApp.factory('projectlist',function($resource){
+    return $resource('http://localhost:8888/api/api/projectlist.json',{
+        update: {
+            method: 'GET'
+        }
+    });
+  });
 
   // mainApp.factory('Job',function($resource){
   //   return $resource('http://localhost:8000/api/jobs/:name',{name:'@name'},{

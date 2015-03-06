@@ -5,12 +5,16 @@ from webob import Response, exc
 from cornice import Service
 from pprint import pprint
 from py2neo import neo4j
+from api.controller import *
+
 
 index = Service(name='index', path='/', description="simplest app")
 auth = Service(name='auth', path='/auth', description="app for auth")
 user = Service(name='user', path='/user', description="user")
 person = Service(name='person', path='/person', description="person")
 organization = Service(name='organization', path='/organization', description="organization")
+projectlist = Service(name='projectlist', path='/projectlist', description='projectlist')
+project = Service(name='project', path='/project', description='project')
 _USERS = {}
 
 @index.get()
@@ -19,8 +23,15 @@ def get_info(request):
 
 @user.get()
 def get_info(request):
-    data = {"users":[{"fname": "leo", "mname": "rue", "lname": "schultz", "gender": "male", "email": "schultz.leo@gmail.com", "phone": "7169690945", "dob": "02-12-1992", "street": "821 panelli place", "city": "santa clara", "state": "california"},{"fname": "kevin", "mname": "pycharmer", "lname": "aloysius", "gender": "male", "email": "kevinaloysius25@gmail.com", "phone": "4086502065", "dob": "11-08-1992", "street": "500 el camino real", "city": "santa clara", "state": "california"},{"fname": "thomas", "mname": "ethan", "lname": "hessler", "gender": "male", "email": "hessler.thomas93@gmail.com", "phone": "4083167651", "dob": "07-21-1993", "street": "821 panelli place", "city": "santa clara", "state": "california"},{"fname": "kevin", "mname": "rhino", "lname": "ryan", "gender": "male", "email": "kevincryan23@gmail.com", "phone": "7162009063", "dob": "09-23-1989", "street": "821 centeral ave", "city": "eden", "state": "new york"}]}
-    return data
+    return userlist
+
+@user.post()
+def create_user(request):
+    """Adds a new user."""
+    user = request.validated['user']
+    _USERS[user['name']] = user['token']
+    return {'Success!'}
+
 
 @person.get()
 def get_info(request):
@@ -34,6 +45,17 @@ def get_info(request):
 
     json_data = open("user.json").read()
     data = json.loads(json_data)
+    return data
+
+@projectlist.get()
+def get_projectlist(request):
+    data = {"projectlist":[
+        {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+        {createdate:"12-15-2014", projectname:"Thomas's Project", projectid:"072793", requests:"50000", errors:"0", charges:"0"},
+        {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+        {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+        {createdate:"12-22-2014", projectname:"Leo's Project", projectid:"021292", requests:"100000", errors:"0", charges:"0"},
+        ]}
     return data
 
 def _create_token():
