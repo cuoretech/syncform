@@ -6,7 +6,8 @@ from cornice import Service
 from pprint import pprint
 from py2neo import neo4j
 from api.controller import *
-
+import api.oauthlib.oauth2
+from oauthlib.oauth2 import WebApplicationClient
 
 index = Service(name='index', path='/', description="simplest app")
 auth = Service(name='auth', path='/auth', description="app for auth")
@@ -23,15 +24,40 @@ def get_info(request):
 
 @user.get()
 def get_info(request):
-    return userlist
+    # return userlist
+    # return single_user
+    return single_user_param
 
 @user.post()
 def create_user(request):
-    """Adds a new user."""
-    user = request.validated['user']
-    _USERS[user['name']] = user['token']
-    return {'Success!'}
+    """Create A User."""
+    # try:
+    #     json_data = request.body
+    #     data_post = json.loads(json_data.decode('utf-8'))
+    #     print (data_post)
+    #     return data_post
+    # except ValueError:
+    #     return False
 
+def new_user(self):
+    UserController.post_user(self)
+
+newuser = User("Doug", "Michael", "Stamper", "dstamper@whitehouse.gov", "2029092495", "08-01-1969", "100 Washington Ave", "Washington", "District of Columbia")
+new_user(newuser)
+
+@user.put()
+def update_fname(self):
+    UserController.update_fname(self)
+
+# newuser_fname = 'Douglass'
+# update_fname(newuser_fname)
+
+@user.delete()
+def delete_user(self):
+    UserController.delete_user(self)
+
+Doug = 'Doug'
+delete_user(Doug)
 
 @person.get()
 def get_info(request):
